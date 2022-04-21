@@ -45,7 +45,7 @@ form.addEventListener('submit', (e) => {
   let namemessages = [];
   let passmessages=[];
   if (name.value === '' || name.value == null) {
-   namemessages.push('Name is required')
+   namemessages.push('name is invalid')
   }
    
 
@@ -63,7 +63,7 @@ password.addEventListener("keypress", (e) => {
   
 
   if (password.value.length <= 6 ) {
-    passmessages.push('Password must be longer than 6 characters')
+    passmessages.push('Password longer than 6 characters')
   }
 if(namemessages.length > 0 && passmessages.length > 0){
     e.preventDefault()
